@@ -1,1 +1,30 @@
 # say-hi-webapp
+<html lang="en">
+
+<head>
+    <title>Demo6</title>
+    <script>
+        function sayHi() {
+            let name = document.getElementById("userName").value;
+
+            if (name.length == 0) {
+                document.getElementById("para1").style.color = "red";
+                document.getElementById("para1").innerHTML = "Enter Your Name!!!";
+            } else {
+                document.getElementById("para1").style.color = "green";
+                document.getElementById("para1").innerHTML = "Hi " + name + "!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="header1">Welcome to JavaScript</h1>
+
+    Enter Your Name: <input type="text" id="userName" /> <br />
+    <button onclick="sayHi()">Say Hi</button> <br />
+
+    <p id="para1"></p>
+</body>
+
+</html>
